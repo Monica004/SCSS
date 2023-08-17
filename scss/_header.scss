@@ -1,0 +1,42 @@
+$navcolor:#000066;
+$textcolor:#ffffff;
+
+.header{
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:$textcolor ;
+
+    .logo{
+        position: relative;
+        padding-top: 40px;
+        padding-left:100px;
+    }
+
+    .nav{
+        float: right;
+        margin-right: 20px;
+
+        &Item {
+            display       : inline-block;
+            border-radius : 5%;         
+            font-size     : 11pt;    
+            text-align    : center;   
+            cursor        : pointer;  
+            padding       : 12px 12px;
+            background    : $navcolor; 
+            color         : $textcolor; 
+            line-height   : 1em;      
+            transition    : .3s;      
+            box-shadow    : 6px 6px 3px #666666; 
+            border        : 2px solid $navcolor;   
+        }
+
+        &Item:hover {
+            box-shadow    : none;       
+            color         : $navcolor;   
+            background    : $textcolor;   
+        }
+    }
+      
+}
